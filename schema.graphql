@@ -1,0 +1,42 @@
+type Query {
+  continents: [Continent!]!
+  continent(code: ID!): Continent
+  countries: [Country!]!
+  country(code: ID!): Country
+  languages: [Language!]!
+  language(code: ID!): Language
+  oldCountrySearch(query: String!): [Country!]! @deprecated(reason: "Use 'countries' with filters instead")
+}
+
+type Continent {
+  code: ID!
+  name: String!
+  countries: [Country!]!
+}
+
+type Country {
+  code: ID!
+  name: String!
+  native: String
+  phone: String
+  capital: String
+  currency: String
+  emoji: String
+  emojiU: String
+  continent: Continent!
+  languages: [Language!]!
+  states: [State!]!
+}
+
+type Language {
+  code: ID!
+  name: String!
+  native: String
+  rtl: Boolean
+}
+
+type State {
+  code: String
+  name: String!
+  country: Country!
+}

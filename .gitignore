@@ -1,0 +1,6 @@
+.vscode/
+
+docs/graphql/
+site/
+
+node_modules/

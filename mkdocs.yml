@@ -1,0 +1,9 @@
+site_name: GraphQL Markdown demo with MkDocs
+site_description: GraphQL schema documentation generated with GraphQL-Markdown for MkDocs.
+theme:
+  name: readthedocs
+  custom_dir: theme-overrides
+markdown_extensions:
+  - admonition
+extra_css:
+  - stylesheets/gqlmd.css
