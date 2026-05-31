@@ -16,7 +16,7 @@ await runGraphQLMarkdown(
     rootPath: "./docs",
     baseURL: "graphql",
     homepage: "./index.md",
-    mdxParser: customMDX,
+    formatter: customMDX,
     loaders: {
       GraphQLFileLoader: "@graphql-tools/graphql-file-loader",
     },
