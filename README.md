@@ -2,6 +2,8 @@
 
 This project demonstrates how to generate GraphQL documentation with GraphQL-Markdown for a MkDocs site using the Read the Docs theme.
 
+**Live demo:** https://graphql-markdown.github.io/demo-mkdocs/
+
 ## Quick start
 
 ```bash
