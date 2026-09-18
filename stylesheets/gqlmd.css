@@ -1,0 +1,13 @@
+.gqlmd-mkdocs-badge {
+  background: #d9edf7;
+  border-radius: 999px;
+  color: #245269;
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  padding: 0.15rem 0.55rem;
+  text-transform: lowercase;
+  font-family: Lato, proxima-nova, Helvetica Neue, Arial, sans-serif;
+  line-height: normal;
+}
