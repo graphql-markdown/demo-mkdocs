@@ -33,6 +33,8 @@ jobs:
 
       - name: Generate GraphQL docs
         run: npm run generate
+        env:
+          GRAPHQL_MARKDOWN_TELEMETRY_DEBUG: "1"
 
       - name: Configure git
         run: |
