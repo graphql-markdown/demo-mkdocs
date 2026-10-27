@@ -22,6 +22,7 @@ await runGraphQLMarkdown(
     },
     pretty: true,
     force: true,
+    telemetry: false,
     docOptions: {
       sectionHeaderId: false,
     },
