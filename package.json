@@ -14,6 +14,6 @@
     "@graphql-markdown/formatters": "^1.2.0",
     "@graphql-markdown/utils": "^1.14.0",
     "@graphql-tools/graphql-file-loader": "^9.1.1",
-    "graphql": "^17.0.2"
+    "graphql": "^17.1.0"
   }
 }
