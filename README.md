@@ -22,7 +22,6 @@ Open `http://127.0.0.1:8000/` and use the GraphQL API entry in the navigation.
 │   ├── index.md                # Demo home page
 │   └── stylesheets/
 │       └── gqlmd.css           # Badge styling
-├── schema.graphql              # Sample GraphQL schema
 ├── scripts/
 │   ├── custom-mkdocs-mdx.mjs   # Wrapper that extends the MkDocs preset with section index links
 │   └── generate-docs.mjs       # GraphQL-Markdown runner
@@ -34,6 +33,7 @@ Open `http://127.0.0.1:8000/` and use the GraphQL API entry in the navigation.
 
 ## Notes
 
+- The documented schema is the [shared GraphQL-Markdown demo schema](https://github.com/graphql-markdown/graphql-markdown/blob/main/tests/e2e/__data__/demo_schema.graphql) used by all GraphQL-Markdown demos, loaded from its raw URL at generation time.
 - The preset `@graphql-markdown/formatters/mkdocs` now provides:
   - Visible page titles as `# H1` headings
   - HTML `<details>` collapsible blocks

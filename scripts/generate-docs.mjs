@@ -12,13 +12,15 @@ rmSync(resolve("./docs/graphql"), { force: true, recursive: true });
 
 await runGraphQLMarkdown(
   {
-    schema: "./schema.graphql",
+    // Shared schema documented by every GraphQL-Markdown demo.
+    schema:
+      "https://raw.githubusercontent.com/graphql-markdown/graphql-markdown/main/tests/e2e/__data__/demo_schema.graphql",
     rootPath: "./docs",
     baseURL: "graphql",
     homepage: "./index.md",
     formatter: customMDX,
     loaders: {
-      GraphQLFileLoader: "@graphql-tools/graphql-file-loader",
+      UrlLoader: "@graphql-tools/url-loader",
     },
     pretty: true,
     force: true,
