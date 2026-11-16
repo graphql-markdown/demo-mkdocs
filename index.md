@@ -16,5 +16,5 @@ This documentation is generated using GraphQL-Markdown with the MkDocs formatter
 
 - `scripts/generate-docs.mjs` runs GraphQL-Markdown programmatically.
 - `scripts/custom-mkdocs-mdx.mjs` adds MkDocs-specific lifecycle hooks.
-- `schema.graphql` is the source GraphQL schema.
+- [`demo_schema.graphql`](https://github.com/graphql-markdown/graphql-markdown/blob/main/tests/e2e/__data__/demo_schema.graphql) is the shared GraphQL-Markdown demo schema, loaded from its URL.
 - `mkdocs.yml` configures the MkDocs site.
