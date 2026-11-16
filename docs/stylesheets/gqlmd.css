@@ -11,3 +11,27 @@
   font-family: Lato, proxima-nova, Helvetica Neue, Arial, sans-serif;
   line-height: normal;
 }
+
+/* Keep the footer at the bottom of the viewport on short pages. */
+.wy-nav-content-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.wy-nav-content {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  width: 100%;
+}
+
+.rst-content {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+}
+
+.rst-content > footer {
+  margin-top: auto;
+}
