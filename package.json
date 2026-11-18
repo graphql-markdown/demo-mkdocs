@@ -7,7 +7,8 @@
     "clean": "rm -rf ./docs/graphql ./site",
     "generate": "node ./scripts/generate-docs.mjs",
     "dev": "npm run generate && mkdocs serve",
-    "build": "npm run generate && mkdocs build"
+    "build": "npm run generate && mkdocs build",
+    "test:visual": "playwright test"
   },
   "dependencies": {
     "@graphql-markdown/cli": "^1.2.2",
@@ -15,5 +16,10 @@
     "@graphql-markdown/utils": "^1.14.2",
     "@graphql-tools/url-loader": "^10.0.9",
     "graphql": "^17.1.0"
+  },
+  "devDependencies": {
+    "@argos-ci/playwright": "^7.10.0",
+    "@playwright/test": "^1.65.1",
+    "serve": "^14.2.8"
   }
 }
