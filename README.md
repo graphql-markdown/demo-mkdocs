@@ -19,17 +19,34 @@ Open `http://127.0.0.1:8000/` and use the GraphQL API entry in the navigation.
 .
 ├── docs/
 │   ├── graphql/                # Generated GraphQL documentation
-│   ├── index.md                # Demo home page
+│   ├── about.md                # About this demo
+│   ├── index.md                # Landing page (uses the home.html template)
+│   ├── js/
+│   │   └── gqlmd.js            # Points field-name links at their heading ids
 │   └── stylesheets/
-│       └── gqlmd.css           # Badge styling
+│       └── gqlmd.css           # Violet theme polish, badges, landing page
+├── tests/visual/
+│   └── site.spec.ts            # Playwright + Argos screenshots
 ├── scripts/
 │   ├── custom-mkdocs-mdx.mjs   # Wrapper that extends the MkDocs preset with section index links
 │   └── generate-docs.mjs       # GraphQL-Markdown runner
 ├── theme-overrides/
-│   └── footer.html             # Read the Docs theme footer override
+│   ├── footer.html             # Read the Docs theme footer override
+│   └── home.html               # Landing page template
+├── playwright.config.ts        # Visual test configuration
 ├── mkdocs.yml                  # MkDocs configuration
 └── package.json
 ```
+
+## Visual tests
+
+```bash
+npm run build
+npx playwright install chromium
+npm run test:visual
+```
+
+Screenshots are uploaded to Argos only in CI when `ARGOS_TOKEN` is set. Set `VISUAL_PORT` to serve the built `site/` on another port than 4173.
 
 ## Notes
 
@@ -39,4 +56,5 @@ Open `http://127.0.0.1:8000/` and use the GraphQL API entry in the navigation.
   - HTML `<details>` collapsible blocks
   - Post-render internal link rewriting to page-relative `.md` links
 - The demo wrapper keeps one demo-specific behavior: appending generated entity links to per-section `index.md` files.
+- The landing page and the violet light/dark polish live in `theme-overrides/home.html` and `docs/stylesheets/gqlmd.css`; dark mode follows the OS colour scheme.
 - The Read the Docs footer attribution is overridden through `theme-overrides/footer.html`.
