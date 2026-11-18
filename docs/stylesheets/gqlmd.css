@@ -42,13 +42,13 @@
 
 /*
  * Polish for GraphQL-Markdown output on the Read the Docs theme.
- * Violet accent, zinc neutrals, soft translucent badges; light and dark
+ * Read the Docs blue accent, zinc neutrals, soft translucent badges; light and dark
  * (follows the OS colour scheme, the theme has no toggle).
  */
 :root {
-  --gqlmd-primary: #6d28d9;
-  --gqlmd-primary-strong: #5b21b6;
-  --gqlmd-header-bg: #6d28d9;
+  --gqlmd-primary: #2472a4;
+  --gqlmd-primary-strong: #1b5a84;
+  --gqlmd-header-bg: #2980b9;
   --gqlmd-bg: #fafafa;
   --gqlmd-surface: #ffffff;
   --gqlmd-surface-alt: #f4f4f5;
@@ -71,9 +71,9 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --gqlmd-primary: #b9a4ff;
-    --gqlmd-primary-strong: #d4c8ff;
-    --gqlmd-header-bg: #4c1d95;
+    --gqlmd-primary: #6ab0de;
+    --gqlmd-primary-strong: #9fcdea;
+    --gqlmd-header-bg: #1f5f8b;
     --gqlmd-bg: #0d0d0d;
     --gqlmd-surface: #0b0b0b;
     --gqlmd-surface-alt: #1b1b1b;
@@ -615,9 +615,9 @@ body,
   }
 }
 
-/* Sidebar captions in the violet accent, badges upright */
+/* Sidebar captions in the RTD blue accent, badges upright */
 .wy-menu-vertical p.caption {
-  color: #b9a4ff;
+  color: #6ab0de;
 }
 
 .gqlmd-mkdocs-badge {
