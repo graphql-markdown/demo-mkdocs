@@ -7,3 +7,5 @@ markdown_extensions:
   - admonition
 extra_css:
   - stylesheets/gqlmd.css
+extra_javascript:
+  - js/gqlmd.js
