@@ -615,7 +615,7 @@ body,
   }
 }
 
-/* Sidebar captions in the violet accent, badges upright, no prev/next on home */
+/* Sidebar captions in the violet accent, badges upright */
 .wy-menu-vertical p.caption {
   color: #b9a4ff;
 }
@@ -624,6 +624,3 @@ body,
   font-style: normal;
 }
 
-.rst-content:has(.gqlmd-home) .rst-footer-buttons {
-  display: none;
-}
