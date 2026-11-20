@@ -576,7 +576,8 @@ body,
 .wy-menu-vertical li.toctree-l3.current > a,
 .wy-menu-vertical li.toctree-l4.current > a {
   background: var(--gqlmd-surface-alt);
-  color: var(--gqlmd-side-text);
+  /* --gqlmd-side-text is for the dark sidebar; on the light surface it fades out. */
+  color: var(--gqlmd-text);
 }
 
 .wy-menu-vertical li.current li > a:hover {
