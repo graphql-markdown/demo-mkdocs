@@ -100,8 +100,11 @@ body,
   color: var(--gqlmd-text);
 }
 
+/* Read the Docs left-aligns the capped column; center it so wide screens
+   don't leave all the spare space on the right. */
 .wy-nav-content {
   max-width: 62rem;
+  margin-inline: auto;
 }
 
 .wy-side-nav-search,
