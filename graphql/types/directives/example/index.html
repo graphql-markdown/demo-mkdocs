@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../../img/favicon.ico" />
+    <title>example - GraphQL-Markdown</title>
+    <link rel="stylesheet" href="../../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../../stylesheets/gqlmd.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "example";
+        var mkdocs_page_input_path = "graphql/types/directives/example.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../../.." class="icon icon-home"> GraphQL-Markdown
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../../about/">About this demo</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Graphql</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../../../">GraphQL Documentation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Operations</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >Directives</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../operations/directives/include/">include</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../operations/directives/skip/">skip</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Mutations</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../operations/mutations/archive-project/">archiveProject</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../operations/mutations/create-folder/">createFolder</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../operations/mutations/create-project/">createProject</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Queries</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../operations/queries/folder/">folder</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../operations/queries/folders/">folders</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../operations/queries/projects/">projects</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../operations/queries/search/">search</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Subscriptions</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../operations/subscriptions/folder-created/">folderCreated</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../operations/subscriptions/project-changed/">projectChanged</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Types</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" >Directives</a>
+    <ul class="current">
+                <li class="toctree-l3"><a class="reference internal" href="../deprecated-type/">deprecatedType</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../deprecated/">deprecated</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../example-response/">exampleResponse</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../example-variables/">exampleVariables</a>
+                </li>
+                <li class="toctree-l3 current"><a class="reference internal current" href="#">example</a>
+    <ul class="current">
+    <li class="toctree-l4"><a class="reference internal" href="#arguments">Arguments</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../one-of/">oneOf</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../specified-by/">specifiedBy</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Enums</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../enums/project-event-type/">ProjectEventType</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../enums/project-status/">ProjectStatus</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Inputs</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../inputs/create-project-input/">CreateProjectInput</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Interfaces</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../interfaces/node/">Node</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Objects</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../objects/folder/">Folder</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../objects/legacy-project/">LegacyProject</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../objects/project-connection/">ProjectConnection</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../objects/project-event/">ProjectEvent</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../objects/project/">Project</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../objects/user/">User</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Scalars</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../scalars/boolean/">Boolean</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../scalars/date-time/">DateTime</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../scalars/id/">ID</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../scalars/int/">Int</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../scalars/string/">String</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Unions</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../unions/search-result/">SearchResult</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../..">GraphQL-Markdown</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Graphql</li>
+          <li class="breadcrumb-item">Types</li>
+          <li class="breadcrumb-item">Directives</li>
+      <li class="breadcrumb-item active">example</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="example">example</h1>
+<p>Provides a GraphQL example that is rendered in the generated API reference.</p>
+<pre><code class="language-graphql">directive @example(
+  value: String!
+) on 
+  | FIELD_DEFINITION
+  | OBJECT
+</code></pre>
+<h3 id="arguments">Arguments</h3>
+<h4 id="examplevalue-string-non-null-scalar"><a href="#"><code>example.value</code></a><span class="gqlmd-mdx-bullet">&nbsp;●&nbsp;</span><a href="../../scalars/string/"><code>String!</code></a> <mark class="gqlmd-mkdocs-badge">non-null</mark> <mark class="gqlmd-mkdocs-badge">scalar</mark></h4>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+  </div>
+
+  <div class="gqlmd-footer">
+    Generated with <a href="https://graphql-markdown.dev">GraphQL-Markdown</a>
+    · <a href="https://github.com/graphql-markdown/graphql-markdown">⭐ Star on GitHub</a>
+    · Built with MkDocs using a theme provided by Read the Docs.
+  </div>
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  
+    <script src="../../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../../..";</script>
+    <script src="../../../../js/theme_extra.js"></script>
+    <script src="../../../../js/theme.js"></script>
+      <script src="../../../../js/gqlmd.js"></script>
+      <script src="../../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
