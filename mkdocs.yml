@@ -1,4 +1,5 @@
 site_name: GraphQL-Markdown
+site_url: https://graphql-markdown.dev/demo-mkdocs/
 site_description: GraphQL schema documentation generated with GraphQL-Markdown for MkDocs.
 theme:
   name: readthedocs
