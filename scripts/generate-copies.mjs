@@ -4,6 +4,8 @@ import { pathToFileURL } from "node:url";
 
 import { runGraphQLMarkdown } from "@graphql-markdown/cli";
 
+import { decorators } from "../lib/decorators.mjs";
+
 rmSync("./.markdown-copies", { force: true, recursive: true });
 
 // Runs in its own process: the printer keeps the first run's formatter within
@@ -21,6 +23,7 @@ await runGraphQLMarkdown(
     loaders: {
       UrlLoader: "@graphql-tools/url-loader",
     },
+    decorators,
     pretty: true,
     force: true,
     telemetry: false,
