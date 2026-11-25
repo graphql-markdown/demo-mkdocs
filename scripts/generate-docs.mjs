@@ -4,6 +4,8 @@ import { pathToFileURL } from "node:url";
 
 import { runGraphQLMarkdown } from "@graphql-markdown/cli";
 
+import { decorators } from "../lib/decorators.mjs";
+
 const customMDX = pathToFileURL(
   resolve("./scripts/custom-mkdocs-mdx.mjs"),
 ).href;
@@ -22,6 +24,7 @@ await runGraphQLMarkdown(
     loaders: {
       UrlLoader: "@graphql-tools/url-loader",
     },
+    decorators,
     pretty: true,
     force: true,
     telemetry: false,

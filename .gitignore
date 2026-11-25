@@ -2,6 +2,7 @@
 
 docs/graphql/
 site/
+.markdown-copies/
 
 node_modules/
 
